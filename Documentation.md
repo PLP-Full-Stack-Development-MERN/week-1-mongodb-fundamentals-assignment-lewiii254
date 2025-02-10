@@ -12,31 +12,25 @@ Install MongoDB Community Edition:
 # For Windows
 ## Download and install from MongoDB website
 - Verify installation:
-
-* mongo --version
-Start MongoDB service:
-
-# For Ubuntu
-sudo service mongodb start
-
-# For MacOS
-brew services start mongodb-community
+```mongo --version```
+- Start MongoDB service:
 
 # For Windows
 net start MongoDB
 Database Setup
 Connect to MongoDB:
 
-mongo
-Create and use the library database:
+- mongo
+- Create and use the library database:
 
-use library
+```use library```
 Create required collections:
 
-db.createCollection("books")
+```db.createCollection("books")
 db.createCollection("users")
 db.createCollection("products")
 db.createCollection("orders")
+```
 Project Structure
 library-management-system/
 ├── scripts/
