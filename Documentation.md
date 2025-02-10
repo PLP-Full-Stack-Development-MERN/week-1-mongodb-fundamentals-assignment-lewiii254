@@ -31,8 +31,8 @@ db.createCollection("users")
 db.createCollection("products")
 db.createCollection("orders")
 ```
-Project Structure
-library-management-system/
+## Project Structure
+- library-management-system/
 ├── scripts/
 │   ├── init-db.js        # Database initialization script
 │   ├── insert-data.js    # Sample data insertion script
@@ -42,7 +42,7 @@ library-management-system/
 │   ├── user-model.js     # User schema and operations
 │   └── order-model.js    # Order schema and operations
 └── README.md
-Data Models
+- Data Models
 Books Collection
 {
   _id: ObjectId,
