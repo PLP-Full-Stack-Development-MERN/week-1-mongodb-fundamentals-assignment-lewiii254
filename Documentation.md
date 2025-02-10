@@ -1,25 +1,19 @@
-MongoDB Library Management System
-Overview
+# MongoDB Library Management System
+## Overview
 This project implements a library management system using MongoDB, featuring book management and an e-commerce platform integration. The system demonstrates fundamental MongoDB operations, data modeling, and best practices for database management.
 
-Prerequisites
-MongoDB (version 2.0 or higher)
-MongoDB Shell (mongosh)
-Optional: MongoDB Compass for GUI-based interaction
-Installation
+## Prerequisites
+- MongoDB (version 2.0 or higher)
+- MongoDB Shell (mongosh)
+- Optional: MongoDB Compass for GUI-based interaction
+- Installation
 Install MongoDB Community Edition:
 
-# For Ubuntu
-sudo apt-get install mongodb
-
-# For MacOS using Homebrew
-brew install mongodb-community
-
 # For Windows
-# Download and install from MongoDB website
-Verify installation:
+## Download and install from MongoDB website
+- Verify installation:
 
-mongo --version
+* mongo --version
 Start MongoDB service:
 
 # For Ubuntu
