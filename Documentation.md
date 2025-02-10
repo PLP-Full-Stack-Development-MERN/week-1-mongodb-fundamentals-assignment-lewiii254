@@ -89,7 +89,7 @@ Orders Collection
   status: String,
   createdAt: Date
 }
-Basic Operations
+# Basic Operations
 Insert Books
 db.books.insertMany([
   {
@@ -100,7 +100,7 @@ db.books.insertMany([
     ISBN: "ISBN-13"
   }
 ])
-Query Books
+# Query Books
 // Find all books
 db.books.find()
 
@@ -109,7 +109,7 @@ db.books.find({ author: "Author Name" })
 
 // Find by publication year range
 db.books.find({ publishedYear: { $gt: 2000 } })
-Update Books
+# Update Books
 // Update single book
 db.books.updateOne(
   { ISBN: "ISBN-13" },
@@ -121,7 +121,7 @@ db.books.updateMany(
   { genre: "Fiction" },
   { $inc: { rating: 1 } }
 )
-Delete Books
+# Delete Books
 // Delete single book
 db.books.deleteOne({ ISBN: "ISBN-13" })
 
@@ -150,7 +150,7 @@ db.books.aggregate([
     averageYear: { $avg: "$publishedYear" } 
   } }
 ])
-Performance Considerations
+## Performance Considerations
 Indexes are created on frequently queried fields
 Compound indexes for common query patterns
 Text indexes for full-text search capabilities
@@ -182,12 +182,12 @@ mongorestore --db library /backup/path/library
 Troubleshooting
 Common issues and solutions:
 
-Connection refused:
+## Connection refused:
 
-Verify MongoDB service is running
-Check MongoDB port (default: 27017)
-Ensure proper authentication
-Slow queries:
+- Verify MongoDB service is running
+- Check MongoDB port (default: 27017)
+- Ensure proper authentication
+## Slow queries:
 
 Review index usage with explain()
 Check for missing indexes
